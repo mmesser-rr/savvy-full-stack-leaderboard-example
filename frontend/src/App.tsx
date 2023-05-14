@@ -36,7 +36,22 @@ function App() {
 
   return (
     <Container>
-      <Typography my={5} variant="h2" fontWeight="bold" textAlign="center" letterSpacing={20}>LEADERBOARD</Typography>
+      <Typography 
+        my={5} 
+        variant="h2" 
+        fontWeight="bold" 
+        textAlign="center" 
+        letterSpacing={20}
+        sx={{
+          typography: {
+            xs: "h4",
+            sm: "h3",
+            md: "h2"
+          }
+        }}
+      >
+        LEADERBOARD
+      </Typography>
       <Top3PresentationTable
         firstPlayer={data?.at(0)}
         secondPlayer={data?.at(1)}
